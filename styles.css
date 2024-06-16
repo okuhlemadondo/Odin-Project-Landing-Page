@@ -5,8 +5,14 @@
 }
 
 @font-face {
-  font-family: "Roboto-Light";
+  font-family: "Roboto-LightItalic";
   src: url("Roboto/Roboto-LightItalic.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("Roboto/Roboto-Light.ttf") format("truetype");
   font-style: normal;
 }
 
@@ -18,7 +24,7 @@
 
 body {
   display: block;
-  min-height: 240vh;
+  max-height: 240vh;
   margin: 0;
   padding: 0;
   overflow: scroll;
@@ -204,7 +210,7 @@ a {
   font-weight: 100;
   color: #1f2937;
   max-width: 830px;
-  font-family: "Roboto-Light", sans-serif;
+  font-family: "Roboto-LightItalic", sans-serif;
 }
 
 .sect-3 .author {
@@ -219,8 +225,67 @@ a {
 
 .sect-4 {
   display: block;
-  min-height: 355px;
+  height: 355px;
+  align-items: center;
+  justify-content: center;
   background-color: white;
+}
+
+.sect-4 .content {
+  min-height: 99%;
+  min-width: 1000px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.CTA-box {
+  border: 2px solid #3882f6;
+  height: 140px;
+  width: 1100px;
+  border-radius: 10px;
+  background-color: #3882f6;
+  color: white;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  min-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.cta h2,
+p {
+  margin: 3px;
+}
+
+.cta p {
+  font-family: "Roboto-Light";
+  color: #e5e7eb;
+}
+
+.button {
+  max-width: 100px;
+}
+
+.sect-4 button {
+  background-color: #3882f6;
+  color: white;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 9px;
+  padding-block: 7px;
+  padding-inline: 40px;
+  text-wrap: nowrap;
+  font-family: "Roboto-Bold";
+  font-size: 17px;
 }
 
 .footer {
